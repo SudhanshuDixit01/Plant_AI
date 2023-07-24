@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://sbdixit.github.io/Plant_AI/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Plant_AI</title>
+<meta name="generator" content="Jekyll v3.9.3">
+<meta property="og:title" content="Plant_AI">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://sbdixit.github.io/Plant_AI/">
+<meta property="og:url" content="https://sbdixit.github.io/Plant_AI/">
+<meta property="og:site_name" content="Plant_AI">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Plant_AI">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"Plant_AI","name":"Plant_AI","url":"https://sbdixit.github.io/Plant_AI/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <style class="anchorjs"></style><link rel="stylesheet" href="./Plant_AI_files/style.css">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/Plant_AI/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://sbdixit.github.io/Plant_AI/">Plant_AI</a></h1>
+      
+
+      <div align="center">
+
+## PLANT-AI [Recognition of Plant Diseases by Leaf Image Classification]
+
+### <a href="https://plant49-ai.herokuapp.com/" target="_blank">https://plant49-ai.herokuapp.com/</a>
+
+## <img src="./Plant_AI_files/web.gif" alt="demo">
+
+ </div>
+
+<h2 id="description">Description<a class="anchorjs-link " href="https://sbdixit.github.io/Plant_AI/#description" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>Food security for billions of people on earth requires minimizing crop damage by timely detection of diseases.Developing methods
+for detection of plant diseases serves the dual purpose of increasing crop yield and reducing pesticide use without knowing
+about the proper disease. Along with development of better crop varieties, disease detection is thus paramount goal for achieving
+food security. The traditional method of disease detection has been to use manual examination by either farmers or experts, which
+can be time consuming and costly, proving infeasible for millions of small and medium sized farms around the world.</p>
+
+<p>This project is an approach to the development of plant disease recognition model, based on leaf image classification, by the
+use of deep convolutional networks. The developed model is able to recognize 38 different types of plant diseases out of of 14 different plants with the ability to distinguish plant leaves from their surroundings.</p>
+
+<h2 id="leaf-image-classification">Leaf Image Classification<a class="anchorjs-link " href="https://sbdixit.github.io/Plant_AI/#leaf-image-classification" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<h2 id=""><img src="./Plant_AI_files/batch.png" alt="batch of image"><a class="anchorjs-link " href="https://sbdixit.github.io/Plant_AI/#" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>This process for building a model which can detect the disease assocaited with the leaf image. The key points to be followed are:</p>
+
+<ol>
+  <li>
+    <p>Data gathering</p>
+
+    <p>The dataset taken was <strong>“New Plant Diseases Dataset”</strong>. It can be downloaded through the link “https://www.kaggle.com/vipoooool/new-plant-diseases-dataset”. It is an Image dataset containing images of different healthy and unhealthy crop leaves.</p>
+  </li>
+  <li>
+    <p>Model building</p>
+
+    <ul>
+      <li>I have used pytorch for building the model.</li>
+      <li>I used three models:-
+        <ol>
+          <li>The CNN model architecture consists of CNN Layer, Max Pooling, Flatten a Linear Layers.</li>
+          <li>Using Transfer learning VGG16 Architecture.</li>
+          <li>Using Transfer learning resnet34 Architecture.</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Training</p>
+
+    <p>The model was trained by using variants of above layers mentioned in model building and by varying hyperparameters. The best model was able to achieve 98.42% of test accuracy.</p>
+  </li>
+  <li>
+    <p>Testing</p>
+
+    <p>The model was tested on total 17572 images of 38 classes.<br>
+The model used for prediction on sample images. It can be seen below:
+<!-- <img src="" alt="index1" height="300px"/> --></p>
+    <div>
+<img src="./Plant_AI_files/out1.png" alt="index2" height="300px" width="450">
+<img src="./Plant_AI_files/out2.png" alt="index3" height="300px" width="450">
+</div>
+  </li>
+  <li>
+    <p>Various Model Architecture tried along with Learning Rate and Optimizer and various accuracy obtained with different models.</p>
+  </li>
+</ol>
+
+
+
+
+
+<h2 id="details-about-the-model">Details about the model<a class="anchorjs-link " href="https://sbdixit.github.io/Plant_AI/#details-about-the-model" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<h3 id="the-model-will-be-able-to-detect-38-types-of-diseases-of-14-unique-plants">The model will be able to detect <code class="language-plaintext highlighter-rouge">38</code> types of <code class="language-plaintext highlighter-rouge">diseases</code> of <code class="language-plaintext highlighter-rouge">14 Unique plants</code><a class="anchorjs-link " href="https://sbdixit.github.io/Plant_AI/#the-model-will-be-able-to-detect-38-types-of-diseases-of-14-unique-plants" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+
+<ul>
+  <li>The detail list of plants and diseases can be seen in <a href="https://sbdixit.github.io/Plant_AI/Src">List</a></li>
+</ul>
+
+<h2 id="further-work">Further Work:<a class="anchorjs-link " href="https://sbdixit.github.io/Plant_AI/#further-work" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<ul>
+  <li>Implementing Image Localisation to find the excat position of the leaf affected .</li>
+  <li>Building Recommender system for recommendation of proper presticides and control method for the disease.</li>
+  <li>Implementing the appropriate management strategies like fungicide applications and pesticide applications could lead to early
+information on crop health and disease detection.This could facilitate the control of diseases and improve productivity.</li>
+</ul>
+
+<h2 id="usage">Usage:<a class="anchorjs-link " href="https://sbdixit.github.io/Plant_AI/#usage" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Flask</code> : Code for Flask Server and deployment</li>
+  <li><code class="language-plaintext highlighter-rouge">TestImages</code> : Sample image for model testing</li>
+  <li><code class="language-plaintext highlighter-rouge">Src</code> : All The source code for building models</li>
+  <li><code class="language-plaintext highlighter-rouge">Models</code> : All the Pretrained Models of Pytorch</li>
+</ul>
+
+
+
+<p>This project is Licensed under <code class="language-plaintext highlighter-rouge">MIT</code></p>
+
+
+
+<p><code class="language-plaintext highlighter-rouge">To understand the code :</code> You can find the complete explanation to the code in <a href="https://medium.com/@soumyajit4419/plant-ai-c8fc95ed90e6?source=friends_link&amp;sk=4707825cbaefa2dcaaa92d0e3ed5de01">Article</a></p>
+
+
+
+<p>Give a ⭐ if you like this website!</p>
+
+<p><a href="https://www.buymeacoffee.com/soumyajit4419" target="_blank"><img src="./Plant_AI_files/default-violet.png" alt="Buy Me A Coffee" height="60px" width="217px"></a></p>
+
+
+      
+    </div>
+    <script src="./Plant_AI_files/anchor.min.js.download" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  
+
+<iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="./Plant_AI_files/saved_resource.html"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" style="display: none;" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}"></div></body></html>
