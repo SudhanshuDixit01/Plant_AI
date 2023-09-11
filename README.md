@@ -4,7 +4,7 @@
 
 ### <a href="https://plant49-ai.herokuapp.com/" target="_blank"></a>
 
-## <img src="./Assets/web.gif" alt="demo"/>
+## <img src="./Assets/pp.gif" alt="demo"/>
 
  </div>
 
